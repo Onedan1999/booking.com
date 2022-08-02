@@ -1,0 +1,439 @@
+.modal-backdrop {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.header,
+.header.container-fluid {
+  color: white;
+  background: #003580;
+}
+.div-header-one,
+.ul-header-second,
+.div-header-third h1,
+.div-header-third h4,
+.div-offer h3,
+.div-offer p {
+  margin: 0 90px;
+}
+
+.me-auto {
+  align-items: center;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.header img {
+  width: 24px;
+}
+.btn-header {
+  border-radius: 0px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+.div-nav {
+  flex-grow: 0;
+}
+.div-nav .navbar-nav .nav-item {
+  padding: 0 10px;
+}
+.modal-content {
+  color: black;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none;
+}
+.modal-footer {
+  display: block;
+  margin-top: -25px;
+}
+.img-fluid {
+  border-radius: 50px;
+}
+.modal-header h5 {
+  margin-bottom: -20px;
+  line-height: 0;
+}
+.ul-modal-currency {
+  list-style: none;
+  margin: 15px 0;
+  padding: 15px 0px;
+}
+.li-modal-currency {
+  padding: 0 15px;
+}
+.li-modal-currency:hover {
+  background: lightgrey;
+  cursor: pointer;
+}
+.li-modal-currency p {
+  margin: 0;
+}
+.li-language img {
+  margin-right: 15px;
+}
+
+.ul-header-second .nav-item a {
+  font-size: 13px;
+  font-weight: bold;
+}
+.ul-header-second .nav-item a img {
+  margin-right: 5px;
+}
+.div-header-third h1 {
+  font-size: 50px;
+}
+.div-choice {
+  height: 35px;
+  background: #003580;
+  position: sticky;
+  top: 55px;
+  z-index: 1000;
+}
+.ul-choice {
+  position: sticky;
+  top: 60px;
+  z-index: 15;
+}
+.ul-choice img {
+  width: 24px;
+}
+.ul-choice li:first-child {
+  width: 450px;
+  margin-left: 100px;
+}
+.ul-choice li:last-child {
+  width: 150px;
+}
+.ul-choice li {
+  border: none;
+  margin: 0 -5px;
+  height: 61px;
+  z-index: 1000;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu li {
+  height: 70px;
+}
+.check-date {
+  font-size: 13px;
+  color: grey;
+}
+.span-choice {
+  font-size: 18px;
+  color: grey;
+}
+.div-checkbox {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.div-covid-content,
+.deal-more,
+.div-destination,
+.carousel,
+.connect-travel,
+.div-genius,
+.destination-welove,
+.form-check,
+.list-destination,
+.div-list-final,
+.ul-list-property,
+.p-copyright,
+.ul-logo,
+.carousel-first,
+.splide__list,
+.splide__track,
+.div-checkbox {
+  width: 1100px;
+}
+.deal-more .img-offer {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.div-des-info {
+  width: calc(50% - 5px);
+  height: 270px;
+  background-image: url(../Images/ho-guom.webp);
+  position: relative;
+}
+.div-destination {
+  position: relative;
+}
+.div-price-deal {
+  position: absolute;
+  height: 44px;
+  bottom: 60px;
+  right: 10px;
+}
+.p-up {
+  font-size: 12px;
+  margin-top: -8px;
+}
+.div-des-info-small {
+  width: calc(33.33% - 10px);
+  height: 270px;
+  background-image: url(../Images/building.webp);
+  position: relative;
+}
+.div-destination a {
+  text-decoration: none;
+}
+.div-vietnam a {
+  margin-right: 20px;
+}
+.div-vietnam p,
+.ul-list-destinate p,
+.ul-welove li {
+  font-size: 14px;
+}
+.ul-welove,
+.ul-list-destinate,
+.destination-welove h4 {
+  margin-left: -10px;
+}
+.ul-list-destinate li:first-child {
+  padding-left: 0;
+}
+.ul-list-destinate li p:first-child:hover {
+  text-decoration: underline;
+}
+.ul-list-property li {
+  background: #003580;
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.div-list-final a,
+.carousel-first p {
+  font-size: 13px;
+  padding: 0 auto;
+}
+.ul-logo li {
+  margin-right: 45px;
+}
+.div-header-third {
+  margin-top: 120px;
+}
+.carousel-first img {
+  margin-bottom: 10px;
+}
+.carousel-first h6,
+.carousel-first p {
+  margin: 0px;
+}
+.carousel-first h4,
+.splide__track {
+  margin-left: -10px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.carousel-small p {
+  font-size: 15px;
+  margin-left: -10px;
+}
+#ui-datepicker-div {
+  margin-top: 20px;
+  margin-left: -45px;
+}
+.ui-datepicker-close {
+  display: none;
+}
+.splide__list li {
+  margin-right: 25px;
+}
+.media-screen {
+  display: none;
+}
+.deal-more,
+.div-destination,
+.div-connect,
+.div-genius,
+.div-list-final,
+.extranet,
+.ul-logo {
+  display: flex;
+}
+/* REPONSIVE  */
+@media screen and (max-width: 800px) {
+  .header,
+  .ul-choice,
+  .div-advise-covid,
+  .div-offer,
+  .deal-more,
+  .carousel-first,
+  .div-destination,
+  .connect-travel,
+  .div-genius,
+  .destination-welove,
+  .list-destination,
+  .p-copyright,
+  .div-mainbody,
+  .input-group,
+  .div-savetime-money,
+  .div-your-property,
+  .div-list-final,
+  .div-list-final .p-copyright,
+  .extranet,
+  .ul-logo {
+    display: none;
+  }
+  .media-screen {
+    display: contents;
+  }
+  .header-media {
+    background: #003580;
+  }
+
+  .date-choice,
+  .checkdate {
+    background: lightgrey;
+  }
+  .checkdate,
+  .currency,
+  .date-choice p {
+    font-size: 15px;
+  }
+  .div-img-mainmodal {
+    width: 30px;
+  }
+  .div-img-mainmodal img,
+  .div-img-hotel img,
+  .star-img img,
+  .div-img-app img {
+    width: 100%;
+  }
+
+  .p-review-num,
+  .excellent,
+  .include-tax,
+  .p-app-search,
+  .icon-star,
+  .version,
+  .p-upper-date,
+  .p-btn-date,
+  .interest p,
+  .book-now p,
+  .ul-small-connect p,
+  .rent-p {
+    font-size: 13px;
+  }
+
+  .info-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .include-tax {
+    text-align: right;
+  }
+  .main-price,
+  .promotion-price,
+  .service-include,
+  .pay-green {
+    color: green;
+  }
+  .main-price {
+    text-decoration: line-through;
+  }
+  .p-review-num {
+    width: 70px;
+  }
+  .btn-page {
+    background: #003580;
+  }
+  .list-img {
+    width: 2000px;
+  }
+  .div-img-last {
+    width: 230px;
+  }
+  .over-flow-img {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .last-img img {
+    width: 100%;
+  }
+  .email {
+    width: 95%;
+  }
+  .div-img-app {
+    width: 50px;
+  }
+  .btn-app {
+    height: 40px;
+  }
+  .list-property,
+  .info-n-copyrights {
+    background: #003580;
+  }
+  .overflow-ul-icon {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .ul-header-second {
+    background: #003580;
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+  .ul-header-second li {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .ul-header-second li img {
+    width: 20px;
+  }
+  .btn-date {
+    width: calc(50% - 2px);
+  }
+  .btn-date input {
+    width: 100%;
+  }
+  .btn-person {
+    width: calc(100% / 3);
+  }
+  .form-check {
+    width: 100%;
+  }
+  .btn-search-date {
+    background: #0071c2;
+    width: 100%;
+  }
+
+  .explore-deal img {
+    width: 50px;
+    height: 50px;
+  }
+  .img-interest img,
+  .interest p {
+    width: 150px;
+  }
+  .ul-small-connect img {
+    width: 200px;
+  }
+  .overflow-small-connect {
+    overflow-x: auto;
+  }
+  ::-webkit-scrollbar {
+    margin-top: 0px;
+  }
+}

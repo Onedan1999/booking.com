@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Booking.com | Official site | The best hotels, flights, car rentals &...
+    </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./JAVASCRIPT/javascript.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div
+        class="container-fluid"
+        style="
+          background: #003580;
+          position: fixed;
+          padding-left: 0;
+          z-index: 1000;
+        "
+      >
+        <nav class="navbar navbar-expand-sm navbar-dark container">
+          <div class="container div-header-one">
+            <a class="navbar-brand fw-bold fs-4" href="javascript:void(0)"
+              >Booking.com</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mynavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse div-nav" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li
+                  class="nav-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Choose your currency"
+                    >VND</a
+                  >
+                </li>
+                <li
+                  class="nav-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal-language"
+                >
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Choose your language"
+                    ><img
+                      src="./Images/flag-language.png"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                  <!-- The Modal -->
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Contact Customer Service"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="./Images/question-logo.PNG"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="nav-item border border-white">
+                  <a class="nav-link" href="javascript:void(0)">
+                    List your property
+                  </a>
+                </li>
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h5 class="modal-title">Select your currency</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <h6>Suggested for you</h6>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Euro</p>
+                            <p>EUR</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Pound Sterling</p>
+                            <p>GPP</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3"
+                            style="visibility: hidden"
+                          >
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3"
+                            style="visibility: hidden"
+                          >
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <h6>All currencies</h6>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Australia Dollar</p>
+                            <p>AUD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Canada Dollar</p>
+                            <p>CAD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>U.S. Dollar</p>
+                            <p>USD</p>
+                          </li>
+                          <li class="li-modal-currency col-lg-3">
+                            <p>Vietnam Dong</p>
+                            <p>VND</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" id="myModal-language">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h5 class="modal-title">Select your language</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <h6>Suggested for you</h6>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                            style="visibility: hide"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language5.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Deutsch</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                            style="visibility: hide"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language5.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Deutsch</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                            style="visibility: hidden"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language5.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Deutsch</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                            style="visibility: hidden"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language5.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Deutsch</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <h6>All languages</h6>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                        <ul
+                          class="ul-modal-currency d-flex justify-content-between row"
+                        >
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(US)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language2.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>Tieng Viet</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language3.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>English(UK)</p>
+                          </li>
+                          <li
+                            class="li-modal-currency col-lg-3 li-language d-flex"
+                          >
+                            <div>
+                              <img
+                                src="./Images/flag-language4.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <p>한국어</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+              <form class="d-flex">
+                <button
+                  class="btn btn-light text-primary fw-normal btn-header"
+                  type="button"
+                >
+                  Register
+                </button>
+                <button
+                  class="btn btn-light text-primary fw-normal btn-header"
+                  type="button"
+                >
+                  Sign in
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container" style="position: relative; top: 70px">
+        <ul class="nav container align-items-center ul-header-second">
+          <li class="nav-item rounded-pill border border-1 border-white">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/bed.PNG" alt="" /> Stays</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/flight.PNG" alt="" /> Flights</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/hotel.PNG" alt="" /> Flight + Hotel</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/Car.PNG" alt="" /> Car Rentals</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/attraction.PNG" alt="" /> Attractions</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/taxi.PNG" alt="" class="bg-white" /> Airport
+              Taxis</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="container div-header-third pb-5">
+        <h1 class="container fw-bolder mt-5 mb-2 pt-4">Find your next stay</h1>
+        <h4 class="container fw-normal">
+          Search deals on hotels, homes, and much more...
+        </h4>
+      </div>
+    </div>
+
+    <ul class="ul-choice container list-group list-group-horizontal p-1">
+      <li class="list-group-item align-items-center d-flex p-1 bg-warning">
+        <div class="input-group pt-2 pb-2 bg-white">
+          <div class="input-group-text border-0 bg-white" id="basic-addon1">
+            <img src="./Images/bed1.PNG" alt="" />
+          </div>
+          <input
+            type="text"
+            class="form-control border-0 pe-0 rounded-0 pe-0 me-3"
+            placeholder="Where are you going"
+            aria-label="Destination"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </li>
+      <li class="list-group-item align-items-center d-flex p-1 bg-warning">
+        <div
+          class="input-group justify-content-around bg-white p-2 pb-2"
+          style="height: 53px"
+        >
+          <button
+            class="input-group-text border-0 bg-white p-0 me-1 checkdate"
+            id="basic-addon1  "
+          >
+            <img src="./Images/calendar.PNG" alt="" class="me-2" />
+          </button>
+          <div
+            class="btn-group p-0 me-1"
+            role="group"
+            aria-label="Button group with nested dropdown"
+          >
+            <input
+              type="text"
+              style="width: 75px"
+              class="btn btn-white p-0 me-1 fw-bold check-date checkdate"
+              value="Check-in"
+              id="datepicker"
+            />
+
+            <input
+              type="text"
+              style="width: 25px"
+              class="btn p-0 me-1 span-choice checkdate"
+              value="-"
+            />
+            <input
+              type="text"
+              style="width: 75px"
+              class="btn btn-white p-0 me-1 fw-bold check-date checkdate"
+              value="Check-out"
+              id="datepicker1"
+            />
+          </div>
+        </div>
+      </li>
+      <li
+        class="list-group-item p-1 bg-warning d-flex align-items-center dropdown"
+      >
+        <div
+          class="input-group justify-content-around bg-white ps-2 pt-1 pb-1 dropdown-toggle"
+          style="height: 53px; width: 270px"
+          data-bs-toggle="dropdown"
+        >
+          <button
+            class="input-group-text border-0 bg-white p-0 container-fluid justify-content-between m-0"
+            style="width: 255px"
+            id="basic-addon1"
+          >
+            <i class="bi bi-person-fill text-secondary fs-5 me-2"></i>
+            <p class="m-0 me-1 check-date fw-bold">1 Adult</p>
+            <p class="m-0 me-1 check-date fw-bold">.</p>
+            <p class="m-0 me-1 check-date fw-bold">0 Children</p>
+            <p class="m-0 me-1 check-date fw-bold">.</p>
+            <p class="m-0 me-1 check-date fw-bold">1 room</p>
+            <p class="m-0 me-3 d-flex flex-column check-date fw-bold">
+              <i class="bi bi-chevron-expand"></i>
+            </p>
+          </button>
+        </div>
+        <ul class="dropdown-menu" style="padding: 0">
+          <li class="m-0 d-flex align-items-center">
+            <div
+              class="dropdown-item d-flex align-items-center justify-content-between row p-0 border-bottom m-0 pt-3 pb-3 mt-3"
+              href="#"
+            >
+              <p class="fw-bolder col-lg-7 align-items-center m-0">Adult</p>
+              <p
+                class="d-flex align-items-center justify-content-around col-lg-5 m-0"
+              >
+                <button class="btn border-primary rounded-0">-</button>
+                <span class="fw-bold">2</span>
+                <button class="btn border-primary rounded-0">+</button>
+              </p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-center">
+            <div
+              class="dropdown-item d-flex align-items-center mt-3 justify-content-between row p-0 border-bottom m-0 pt-3 pb-3"
+              href="#"
+            >
+              <p class="fw-bolder col-lg-7 align-items-center m-0">
+                Children <br /><span class="fw-normal fs-6">Ages 0 - 17</span>
+              </p>
+              <p
+                class="d-flex align-items-center justify-content-around col-lg-5 m-0"
+              >
+                <button class="btn border-primary rounded-0">-</button>
+                <span class="fw-bold">2</span>
+                <button class="btn border-primary rounded-0">+</button>
+              </p>
+            </div>
+          </li>
+          <li class="m-0 d-flex align-items-center" style="width: 100%">
+            <div
+              class="dropdown-item d-flex align-items-center mt-3 justify-content-between row p-0 m-0 pt-3 pb-3"
+              href="#"
+            >
+              <p class="fw-bolder col-lg-7 align-items-center m-0">Rooms</p>
+              <p
+                class="d-flex align-items-center justify-content-around col-lg-5 m-0"
+              >
+                <button class="btn border-primary rounded-0">-</button>
+                <span class="fw-bold">2</span>
+                <button class="btn border-primary rounded-0">+</button>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group-item p-1 d-flex align-items-center bg-warning">
+        <div
+          class="input-group justify-content-around align-items-center pt-3 pb-2 bg-primary"
+        >
+          <button
+            class="input-group-text border-0 p-2 pt-0 pb-1 text-center fw-bolder btn-primary"
+            id="basic-addon1"
+          >
+            SEARCH
+          </button>
+        </div>
+      </li>
+    </ul>
+    <div class="input-group container border-0 bg-white div-checkbox">
+      <div class="input-group-text border-0 bg-white container ps-0">
+        <input type="checkbox" class="me-2" /> I'm travelling to work
+      </div>
+    </div>
+
+    <div class="container div-advise-covid">
+      <div
+        class="container div-covid-content d-flex align-items-center border rounded-0 p-3"
+      >
+        <div class="me-3"><img src="./Images/covid-info.PNG" alt="" /></div>
+        <p class="m-0 p-0">
+          Get the advice you need. Check the latest COVID-19 restrictions before
+          you travel.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div class="container mt-4 div-offer">
+      <h3 class="container">Offers</h3>
+      <p class="container">Promotions, deals, and special offers for you</p>
+    </div>
+
+    <div
+      class="container deal-more align-items-center mt-4 pt-3 pb-3 shadow rounded"
+    >
+      <div class="img-offer" style="width: 140px">
+        <img class="img-fluid rounded-0" src="./Images/offer.jpg" alt="" />
+      </div>
+      <div class="deal-detail">
+        <h5>Save 15% or more</h5>
+        <p class="bg-secondary">Plan your dream trip with a Getaway Deal</p>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action text-white fw-bold text-align-center"
+          style="width: 140px; background: #003580"
+          >Explore Deals</a
+        >
+      </div>
+    </div>
+    <!-- Carousel phần 1 -->
+    <section
+      class="splide container carousel-first mt-3"
+      aria-label="Basic Structure Example"
+      id="image-carousel"
+    >
+      <h4>Browse by property type</h4>
+      <div class="splide__arrows">
+        <button
+          class="splide__arrow splide__arrow--prev bg-light"
+          style="left: -15px"
+        >
+          <i class="bi bi-chevron-left fw-bold"></i>
+        </button>
+        <button
+          class="splide__arrow splide__arrow--next bg-light"
+          style="right: -20px"
+        >
+          <i class="bi bi-chevron-right fw-bold"></i>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/apart-caroi.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/resort-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/cabins-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Carousel phần 2 -->
+    <section
+      class="splide small-splide container carousel-first mt-3 carousel-small"
+      aria-label="Basic Structure Example"
+      id="small-carousel"
+    >
+      <h4>Explore Vietnam</h4>
+      <p class="text-secondary mb-3">
+        These popular destinations have a lot to offer
+      </p>
+      <div class="splide__arrows">
+        <button
+          class="splide__arrow splide__arrow--prev bg-white"
+          style="left: -15px"
+        >
+          <i class="bi bi-chevron-left fw-bold"></i>
+        </button>
+        <button
+          class="splide__arrow splide__arrow--next bg-white"
+          style="right: -20px"
+        >
+          <i class="bi bi-chevron-right fw-bold"></i>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/apart-caroi.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/resort-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/cabins-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+          <li class="splide__slide">
+            <div><img src="./Images/hotel-carousel.jpeg" alt="" /></div>
+            <h6>Apartments</h6>
+            <p>1909,144 apartments</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Làm phần tiếp tục sau carousel -->
+    <div class="container div-destination mt-4 p-0 justify-content-between">
+      <div class="div-des-info">
+        <h3 class="ms-3 pt-3">
+          <a href="#" class="a-hanoi fw-bold text-white">Hanoi</a>
+          <img src="./Images/vn-flag.png" alt="" />
+        </h3>
+        <p class="text-white fs-6 ms-3">3,805 properties</p>
+        <div class="div-price-deal p-2 rounded" style="background: #ff8000">
+          <p class="mb-0 p-up">Deals star at</p>
+          <p class="text-end p-down">S$ 12</p>
+        </div>
+      </div>
+      <div
+        class="div-des-info"
+        style="background-image: url(../Images/beach.webp)"
+      >
+        <h3 class="ms-3 pt-3">
+          <a href="#" class="a-hanoi fw-bold text-white">Danang</a>
+          <img src="./Images/vn-flag.png" alt="" />
+        </h3>
+        <p class="text-white fs-6 ms-3">3,805 properties</p>
+        <div class="div-price-deal p-2 rounded" style="background: #ff8000">
+          <p class="mb-0 p-up">Deals star at</p>
+          <p class="text-end p-down">S$ 12</p>
+        </div>
+      </div>
+    </div>
+    <div class="container div-destination mt-3 p-0 justify-content-between">
+      <div class="div-des-info-small">
+        <h3 class="ms-3 pt-3">
+          <a href="#" class="a-hanoi fw-bold text-white">Ho Chi Minh City</a>
+          <img src="./Images/vn-flag.png" alt="" />
+        </h3>
+        <p class="text-white fs-6 ms-3">3,805 properties</p>
+        <div class="div-price-deal p-2 rounded" style="background: #ff8000">
+          <p class="mb-0 p-up">Deals star at</p>
+          <p class="text-end p-down">S$ 12</p>
+        </div>
+      </div>
+      <div
+        class="div-des-info-small"
+        style="background-image: url(./Images/boat.webp)"
+      >
+        <h3 class="ms-3 pt-3">
+          <a href="#" class="a-hanoi fw-bold text-white">Hoi An</a>
+          <img src="./Images/vn-flag.png" alt="" />
+        </h3>
+        <p class="text-white fs-6 ms-3">3,805 properties</p>
+        <div class="div-price-deal p-2 rounded" style="background: #ff8000">
+          <p class="mb-0 p-up">Deals star at</p>
+          <p class="text-end p-down">S$ 12</p>
+        </div>
+      </div>
+      <div
+        class="div-des-info-small"
+        style="background-image: url(./Images/boat2.webp)"
+      >
+        <h3 class="ms-3 pt-3">
+          <a href="#" class="a-hanoi fw-bold text-white">Ninh Binh</a>
+          <img src="./Images/vn-flag.png" alt="" />
+        </h3>
+        <p class="text-white fs-6 ms-3">3,805 properties</p>
+        <div class="div-price-deal p-2 rounded" style="background: #ff8000">
+          <p class="mb-0 p-up">Deals star at</p>
+          <p class="text-end p-down">S$ 12</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container connect-travel mt-4">
+      <h4 class="fw-bold">Connect with other travelers</h4>
+      <div class="div-connect">
+        <div class="div-vietnam">
+          <div>
+            <a href="#"
+              ><img
+                src="./Images/vietnam.jpg"
+                alt=""
+                class="img-fluid rounded-0"
+            /></a>
+            <h6 class="p-0 mt-3 mb-0">Vietnam</h6>
+            <p class="mt-0 mb-0 text-secondary">Travel community</p>
+            <p class="mt-0 mb-0 text-secondary">116,764 travelers</p>
+          </div>
+        </div>
+        <div class="div-vietnam">
+          <div>
+            <a href="#"
+              ><img
+                src="./Images/Traveltalk.jpg"
+                alt=""
+                class="img-fluid rounded-0"
+            /></a>
+            <h6 class="p-0 mt-3 mb-0">Travel Talk</h6>
+            <p class="mt-0 mb-0 text-secondary">Travel community</p>
+            <p class="mt-0 mb-0 text-secondary">116,764 travelers</p>
+          </div>
+        </div>
+        <div class="div-vietnam">
+          <div>
+            <a href="#"
+              ><img
+                src="./Images/community.png"
+                alt=""
+                class="img-fluid rounded-0"
+            /></a>
+            <h6 class="p-0 mt-3 mb-0">More Community</h6>
+            <p class="mt-0 mb-0 text-secondary">Travel community</p>
+            <p class="mt-0 mb-0 text-secondary">116,764 travelers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container div-genius mt-4 p-0 pt-3 pb-3 align-items-center border border-secondary"
+    >
+      <div class="img-genius">
+        <img src="./Images/genius.png" alt="" class="img-fluid" />
+      </div>
+      <div class="text-content">
+        <h4 class="fw-bold">Get instant discounts</h4>
+        <p class="mb-0">
+          Just sign into your Booking.com account and look for the blue
+        </p>
+        <p>Genius logo to save</p>
+        <div class="button-genius">
+          <button
+            type="button"
+            class="btn text-primary border border-primary rounded-0 fs-6 fw-bold"
+          >
+            Sign in
+          </button>
+          <button type="button" class="btn text-primary fs-6 fw-bold">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container destination-welove mt-4">
+      <h4 class="fw-bold">Destinations we love</h4>
+      <ul
+        class="list-group list-group-horizontal ul-welove"
+        style="cursor: pointer"
+      >
+        <li
+          class="list-group-item border rounded-pill border-primary text-primary fw-bold"
+        >
+          Region
+        </li>
+        <li class="list-group-item border-0 fw-bold ms-3">Cities</li>
+        <li class="list-group-item border-0 fw-bold">Place of Interest</li>
+      </ul>
+    </div>
+    <div class="container list-destination mt-4">
+      <ul
+        class="list-group list-group-horizontal ul-list-destinate justify-content-between"
+        style="cursor: pointer"
+      >
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bali</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Tenerif</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bihah</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Phuket Province</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Mykonos</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+      </ul>
+      <ul
+        class="list-group list-group-horizontal ul-list-destinate justify-content-between"
+        style="cursor: pointer"
+      >
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bali</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Tenerif</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bihah</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Phuket Province</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Mykonos</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+      </ul>
+      <ul
+        class="list-group list-group-horizontal ul-list-destinate justify-content-between"
+        style="cursor: pointer"
+      >
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bali</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Tenerif</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bihah</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Phuket Province</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Mykonos</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+      </ul>
+      <ul
+        class="list-group list-group-horizontal ul-list-destinate justify-content-between"
+        style="cursor: pointer"
+      >
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bali</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Tenerif</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Bihah</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0">
+          <p class="fw-bold m-0">Phuket Province</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+        <li class="list-group-item border-0" style="visibility: hidden">
+          <p class="fw-bold m-0">Mykonos</p>
+          <p class="text-secondary m-0">12,682 properties</p>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="div-savetime-money mt-5 text-white pt-5 pb-5 mb-0"
+      style="background: #00224f"
+    >
+      <p class="fs-4 fw-light text-center m-0">Save time, save money!</p>
+      <p class="text-center fs-6 fw-light m-0">
+        Sign up and we'll send the best deals to you
+      </p>
+      <form action="/action_page.php">
+        <div class="mt-3 d-flex justify-content-center mb-1">
+          <input
+            type="email"
+            class="form-control me-2 fs-4 fw-light"
+            style="width: 377px; height: 48px"
+            id="email"
+            placeholder="Your email"
+            name="Your email"
+          />
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 161px; font-size: 22px"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div class="form-check container mb-3 d-flex justify-content-around">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" />
+            Send me a link to get the FREE Booking.com app!
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="div-your-property text-white" style="background: #003580">
+      <div
+        class="div-a-list d-flex justify-content-center pt-3 pb-3 mb-3 border-bottom border-bottom-white"
+      >
+        <a
+          href="#"
+          class="border rounded-0 border-white text-white text-decoration-none ps-3 pe-3"
+          style="font-size: 13px"
+          >List your property</a
+        >
+      </div>
+      <ul
+        class="list-group container list-group-horizontal ul-list-property justify-content-between"
+        style="cursor: pointer"
+      >
+        <li class="list-group-item border-0">Mobile Version</li>
+        <li class="list-group-item border-0">Your account</li>
+        <li class="list-group-item border-0">
+          Makes change online to your booking
+        </li>
+        <li class="list-group-item border-0">Customer Service help</li>
+        <li class="list-group-item border-0">Become an affilliate</li>
+        <li class="list-group-item border-0">Booking.com for business</li>
+      </ul>
+    </div>
+    <div class="container div-list-final mt-3 justify-content-between">
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Countries</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Regions</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Cities</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Districts</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Airports</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Hotels</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Places of interest</a
+        >
+      </div>
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Countries</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Regions</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Cities</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Districts</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Airports</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Hotels</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Places of interest</a
+        >
+      </div>
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unique places to stay</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >All destinations</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Discover</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Reviews</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unpacked: Travel articles</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Travel communities</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Seasonal and holiday deals</a
+        >
+      </div>
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unique places to stay</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >All destinations</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Discover</a
+        >
+      </div>
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unique places to stay</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >All destinations</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Discover</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Reviews</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unpacked: Travel articles</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Travel communities</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Seasonal and holiday deals</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unique places to stay</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >All destinations</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Discover</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Reviews</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Unpacked: Travel articles</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Travel communities</a
+        >
+        <a
+          href="#"
+          class="list-group-item list-group-item-action border-0 text-primary"
+          >Seasonal and holiday deals</a
+        >
+      </div>
+    </div>
+    <div class="container extranet justify-content-center mt-5 mb-5">
+      <a href="#" class="text-primary fw-bold text-decoration-none"
+        >Extranet login</a
+      >
+    </div>
+    <p class="container p-copyright text-secondary" style="font-size: 11px">
+      Copyright © 1996–2022 Booking.com™. All rights reserved.
+    </p>
+    <p
+      class="container p-copyright text-secondary text-center"
+      style="font-size: 12px"
+    >
+      Booking.com is part of Booking Holdings Inc., the world leader in online
+      travel and related services.
+    </p>
+    <ul class="container list-unstyled ul-logo mt-4 justify-content-center">
+      <li><img src="./Images/logo-booking.png" alt="" /></li>
+      <li><img src="./Images/logo-price.png" alt="" /></li>
+      <li><img src="./Images/logo-kayya.png" alt="" /></li>
+      <li><img src="./Images/logo-agoda.png" alt="" /></li>
+      <li><img src="./Images/logo-reantal.png" alt="" /></li>
+      <li><img src="./Images/logo-open.png" alt="" /></li>
+    </ul>
+    <div class="media-screen">
+      <div
+        class="header-media p-3 pt-2 pb-2 d-flex justify-content-between align-items-center"
+      >
+        <h5 class="text-white">Booking.com</h5>
+        <div class="menu-div text-white fs-2 d-flex">
+          <div class="user-icon me-4">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <div
+            class="menu-icon"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal-menubar"
+          >
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal-menubar">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">More</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div class="currency d-flex align-items-center">
+                  <p class="me-3">VND</p>
+                  <p>Vietnam Dong</p>
+                </div>
+                <div class="currency d-flex align-items-center mt-2">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <img
+                      src="./Images/flag-language.png"
+                      alt=""
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <p class="m-0">English (US)</p>
+                </div>
+                <div class="currency d-flex align-items-center mt-4">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-phone fs-2"></i>
+                  </div>
+                  <p class="m-0">Download the Iphone App</p>
+                </div>
+                <div class="currency d-flex align-items-center mt-3">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-google fs-2"></i>
+                  </div>
+                  <p class="m-0">Genius loyalty program</p>
+                </div>
+                <div class="currency d-flex align-items-center mt-3">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-house fs-2"></i>
+                  </div>
+                  <p class="m-0">List your Property</p>
+                </div>
+                <h6 class="mt-4">Help and support</h6>
+                <div class="currency d-flex align-items-center mt-3">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-question-circle fs-2"></i>
+                  </div>
+                  <p class="m-0">Contact Customer service</p>
+                </div>
+                <div class="currency d-flex align-items-center mt-3">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-question-circle fs-2"></i>
+                  </div>
+                  <p class="m-0">Partner dispute</p>
+                </div>
+                <h6 class="mt-4">Inspiration</h6>
+                <div class="currency d-flex align-items-center mt-3">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-question-circle fs-2"></i>
+                  </div>
+                  <p class="m-0">Deal</p>
+                </div>
+                <div class="currency d-flex align-items-center mt-3">
+                  <div class="me-3 div-img-mainmodal rounded-circle">
+                    <i class="bi bi-journals fs-2"></i>
+                  </div>
+                  <p class="m-0">Travel Articles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-ul-icon">
+        <ul class="ul-header-second d-flex pb-2">
+          <li class="rounded-pill border border-1 border-white">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/bed.PNG" alt="" /> Stays</a
+            >
+          </li>
+          <li class="">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/flight.PNG" alt="" /> Flights</a
+            >
+          </li>
+          <li class="">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/hotel.PNG" alt="" /> Flight + Hotel</a
+            >
+          </li>
+          <li class="">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/Car.PNG" alt="" /> Car Rentals</a
+            >
+          </li>
+          <li class="">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/attraction.PNG" alt="" /> Attractions</a
+            >
+          </li>
+          <li class="">
+            <a class="nav-link text-white" href="#"
+              ><img src="./Images/taxi.PNG" alt="" class="bg-white" /> Airport
+              Taxis</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="upper-date pt-4 pb-4">
+        <h4 class="fw-bold m-0 ms-3">Search</h4>
+        <p class="p-upper-date m-0 ms-3">
+          Destination, properties, even an address
+        </p>
+      </div>
+      <div class="local-n-date bg-warning p-1 m-3">
+        <div
+          class="local d-flex bg-white align-items-center pt-2 pb-2 border-bottom"
+        >
+          <i class="bi bi-search text-primary ms-3"></i>
+          <h6 class="city mb-0 ms-3 fw-bolder">Around current location</h6>
+        </div>
+        <div
+          class="local date-choice bg-warning d-flex align-items-center justify-content-between mt-1 border-bottom"
+        >
+          <button class="btn bg-white btn-date pt-0 pb-0">
+            <p class="p-btn-date m-0 text-start">Check-in date</p>
+            <input
+              type="text"
+              name="date"
+              id="checkdate"
+              class="border-0 checkdate bg-white fw-bold"
+            />
+          </button>
+          <button class="btn bg-white btn-date pt-0 pb-0">
+            <p class="p-btn-date m-0 text-start">Check-out date</p>
+            <input
+              type="text"
+              name="date"
+              id="date"
+              class="border-0 checkdate bg-white fw-bold text-start"
+            />
+          </button>
+        </div>
+        <div class="person-n-room d-flex justify-content-between">
+          <button
+            class="btn bg-white btn-person pt-0 pb-0 rounded-0 mt-1 border-end"
+          >
+            <p class="p-btn-date m-0 text-start">Adults</p>
+            <h6 class="fw-bold m-0 text-start">2</h6>
+          </button>
+          <button
+            class="btn bg-white btn-person pt-0 pb-0 rounded-0 mt-1 border-end"
+          >
+            <p class="p-btn-date m-0 text-start">Children</p>
+            <h6 class="fw-bold m-0 text-start">2</h6>
+          </button>
+          <button class="btn bg-white btn-person pt-0 pb-0 rounded-0 mt-1">
+            <p class="p-btn-date m-0 text-start">Rooms</p>
+            <h6 class="fw-bold m-0 text-start">2</h6>
+          </button>
+        </div>
+        <div class="form-check bg-white mt-1 pt-2 pb-2">
+          <label class="form-check-label ms-3">
+            <input class="form-check-input" type="checkbox" name="remember" />
+            I'm traveling to work
+          </label>
+        </div>
+        <button class="btn btn-search-date text-white fw-bold mt-1 mb-1">
+          Search
+        </button>
+      </div>
+      <div class="covid-get d-flex align-items-center m-3">
+        <div class="me-2">
+          <img src="./Images/covid-info.PNG" alt="" />
+        </div>
+        <p class="p-covid m-0">
+          Get the lastest COVID-19 travel advice
+          <i class="bi bi-chevron-right ms-5"></i>
+        </p>
+      </div>
+      <div class="explore-deal m-3 pt-2 pb-2 d-flex">
+        <div class="img-deal me-2">
+          <img src="./Images/boat2.webp" alt="" />
+        </div>
+        <div class="con-tent-explore">
+          <h65 class="fw-bold">Save 15% or more</h65>
+          <p>Summer's calling: Discover dream destination with Gateway deals</p>
+          <button
+            class="btn border border-primary text-primary fw-bold rounded-0"
+          >
+            Explore deals
+          </button>
+        </div>
+      </div>
+      <div class="div-slide">
+        <h5 class="m-0 ms-3">Browse by property type</h5>
+        <div class="over-flow-img">
+          <div class="list-img d-flex mt-3">
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+            <div class="div-img-last ms-3 border">
+              <div class="last-img mb-2">
+                <img src="./Images/last-img.jpg" alt="" class="rounded" />
+              </div>
+              <div class="div-content-last ms-2 me-2">
+                <h6 class="m-0">Rosabella Boutique...</h6>
+                <p class="text-secondary m-0">8.6 Excellent</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="p-1" />
+      <div class="interest m-3">
+        <h6 class="fw-bold">Still interrested in this property?</h6>
+        <div class="img-interest"><img src="./Images/beach.webp" alt="" /></div>
+        <p class="mb-0 fw-bold">Seashore Hotel & Apartment</p>
+        <p class="mb-0 text-secondary">Danang, Vietnam</p>
+      </div>
+      <hr class="p-1" />
+      <div class="book-now m-3 mt-0 mb-0 border-bottom pb-2">
+        <h6>
+          <i class="bi bi-check-lg me-2"></i> Book now, PAY AT THE PROPERTY
+        </h6>
+        <p class="text-secondary m-0 ms-4">
+          with FREE cancellation on most rooms
+        </p>
+      </div>
+      <div class="book-now m-3 mt-0 mb-0 pt-2">
+        <h6>
+          <i class="bi bi-check-lg me-2"></i> Book now, PAY AT THE PROPERTY
+        </h6>
+        <p class="text-secondary m-0 ms-4">
+          with FREE cancellation on most rooms
+        </p>
+      </div>
+      <hr class="p-1" />
+      <div class="sldie-img-smal ms-3">
+        <h6 class="fw-bold">Connect with other travelers</h6>
+        <div class="overflow-small-connect">
+          <ul class="ul-small-connect list-unstyled d-flex">
+            <li class="me-3">
+              <div class="img-connect">
+                <img src="./Images/vietnam.jpg" alt="" />
+              </div>
+              <p class="mb-0 fw-bold">Vietnam</p>
+              <p class="mb-0 text-secondary">Travel community</p>
+            </li>
+            <li class="me-3">
+              <div class="img-connect">
+                <img src="./Images/community.png" alt="" />
+              </div>
+              <p class="mb-0 fw-bold">Vietnam</p>
+              <p class="mb-0 text-secondary">Travel community</p>
+            </li>
+            <li>
+              <div class="img-connect">
+                <img src="./Images/Traveltalk.jpg" alt="" />
+              </div>
+              <p class="mb-0 fw-bold">Vietnam</p>
+              <p class="mb-0 text-secondary">Travel community</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rent-book-find ms-3">
+        <div class="rent pt-2 pb-2">
+          <div
+            class="img-rent d-flex align-items-center pt-2 pb-2 border-bottom border-top"
+          >
+            <i class="bi bi-check-lg"></i>
+            <div class="rent-p">
+              <p class="mb-0 fw-bold">Rent a car</p>
+              <p class="mb-0 text-secondary">Travel community</p>
+            </div>
+          </div>
+          <div
+            class="img-rent d-flex align-items-center pt-2 pb-2 border-bottom"
+          >
+            <i class="bi bi-check-lg"></i>
+            <div class="rent-p">
+              <p class="mb-0 fw-bold">Book an airport taxi</p>
+              <p class="mb-0 text-secondary">Travel community</p>
+            </div>
+          </div>
+          <div
+            class="img-rent d-flex align-items-center pt-2 pb-2 border-bottom"
+          >
+            <i class="bi bi-check-lg"></i>
+            <div class="rent-p">
+              <p class="mb-0 fw-bold">Find thing to do</p>
+              <p class="mb-0 text-secondary">Travel community</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="ms-3 mt-3">
+        Subscribe and get deals sent straight to your inbox
+      </h6>
+      <input
+        class="ms-3 email border"
+        type="email"
+        name="email"
+        id="your-email"
+        placeholder="your@email.here"
+      />
+      <button
+        class="btn border border-primary text-primary ms-3 mt-3 pt-0 pb-0 rounded-0"
+      >
+        Subscribe
+      </button>
+      <hr class="p-1" />
+      <div
+        class="get-appmobile pb-3 d-flex justify-content-between align-items-center"
+      >
+        <div class="d-flex">
+          <div class="div-img-app ms-3">
+            <img src="./Images/logo.webp" alt="" class="rounded" />
+          </div>
+          <div class="rate-app ms-3">
+            <h6 class="m-0 fw-bold">Get the FREE app</h6>
+            <div class="icon-star">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+            </div>
+            <p class="p-app-search m-0">
+              Search, book & manage your trips in the app
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-app ps-4 pe-4 rounded-0 me-3">
+          Install
+        </button>
+      </div>
+      <div
+        class="list-property d-flex justify-content-center pt-3 pb-3 border-bottom"
+      >
+        <button class="btn btn-property btn-light text-primary rounded-0">
+          List Your Property
+        </button>
+      </div>
+      <div class="info-n-copyrights pt-3 pb-3">
+        <ul class="version list-unstyled d-flex justify-content-center">
+          <li class="text-decoration-underline text-white fw-bold me-3">
+            Desktop Version
+          </li>
+          <li class="text-decoration-underline text-white fw-bold">
+            Terms & conditions
+          </li>
+        </ul>
+        <ul class="version list-unstyled d-flex justify-content-center">
+          <li class="text-decoration-underline text-white fw-bold me-3">
+            How we work
+          </li>
+          <li class="text-decoration-underline text-white fw-bold">
+            Privacy & Cookies
+          </li>
+        </ul>
+        <ul class="version list-unstyled d-flex justify-content-center">
+          <li class="text-decoration-underline text-white fw-bold me-3">
+            About Booking.com
+          </li>
+        </ul>
+        <p
+          class="container p-copyright-media text-white d-flex justify-content-center text-center"
+          style="font-size: 12px"
+        >
+          Copyright © 1996–2022 Booking.com™. All rights reserved.
+        </p>
+        <p
+          class="container p-copyright-media text-white d-flex justify-content-center text-center"
+          style="font-size: 12px"
+        >
+          Your reference ID is: 750E41A.
+        </p>
+        <p
+          class="container p-copyright-media text-decoration-underline text-white d-flex justify-content-center text-center"
+          style="font-size: 12px"
+        >
+          Sitemap
+        </p>
+      </div>
+    </div>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+      var splide = new Splide(".splide", {
+        type: "loop",
+        perPage: 4,
+        perMove: 1,
+      });
+
+      splide.mount();
+      var slide = new Splide(".small-splide", {
+        type: "loop",
+        perPage: 6,
+        perMove: 1,
+      });
+      slide.mount();
+
+      $(function () {
+        $(".checkdate").datepicker({
+          numberOfMonths: 2,
+          showButtonPanel: true,
+        });
+      });
+    </script>
+  </body>
+</html>
